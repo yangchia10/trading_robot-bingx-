@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BACKGROUND</class>
+ <widget class="QDialog" name="BACKGROUND">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>756</width>
+    <height>714</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BINGX_AUTO</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 20, 40);</string>
+  </property>
+  <widget class="QComboBox" name="Choose_coin">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(218, 218, 218);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent;  /* 设置背景透明 */
+    color: rgb(102, 153, 204);
+}</string>
+   </property>
+   <property name="text">
+    <string>現在價位    ：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="NOW_PRICE">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>120</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent;  /* 设置背景透明 */
+    color: rgb(102, 153, 204);
+}</string>
+   </property>
+   <property name="text">
+    <string>NOW_PRICE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent;  /* 设置背景透明 */
+   color: rgb(102, 153, 204);
+}</string>
+   </property>
+   <property name="text">
+    <string>期初資金    ：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent;  /* 设置背景透明 */
+   color: rgb(102, 153, 204);
+}</string>
+   </property>
+   <property name="text">
+    <string>當前持倉    ：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent;  /* 设置背景透明 */
+    color: rgb(102, 153, 204);
+}</string>
+   </property>
+   <property name="text">
+    <string>當前資金    ：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="O_Asset">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>180</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent;  /* 设置背景透明 */
+    color: rgb(102, 153, 204);
+}</string>
+   </property>
+   <property name="text">
+    <string>O_Asset</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ASSET">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent;  /* 设置背景透明 */
+   color: rgb(102, 153, 204);
+}</string>
+   </property>
+   <property name="text">
+    <string>ASSET</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HOLD">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>300</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent;  /* 设置背景透明 */
+   color: rgb(102, 153, 204);
+}</string>
+   </property>
+   <property name="text">
+    <string>HOLD</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>101</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="pixmap">
+    <pixmap>FEC15FF3-E050-48D9-9D9C-96211AD8B989.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>601</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 16pt &quot;Arial&quot;;
+    background-color: rgb(218, 218, 218);  /* 设置背景颜色 */
+    border: 1px solid #707070;  /* 设置边框颜色 */
+    border-radius: 5px;  /* 设置边框圆角半径 */
+    padding: 5px;  /* 设置内边距 */
+}</string>
+   </property>
+   <property name="text">
+    <string>NOW_TIME</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="USE_INFO">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>70</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(218, 218, 218);  /* 設置背景顏色 */
+    border: 1px solid #707070;  /* 設置邊框顏色 */
+    border-radius: 5px;  /* 設置邊框圓角半徑 */
+    padding: 5px;  /* 設置內邊距 */
+}
+
+QPushButton:hover {
+    background-color: rgb(238, 238, 238);  /* 鼠標懸停時的背景顏色 */
+}
+
+QPushButton:pressed {
+    background-color: rgb(200, 200, 200);  /* 按下時的背景顏色 */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>USE_INFO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RUN">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>70</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(218, 218, 218);  /* 設置背景顏色 */
+    border: 1px solid #707070;  /* 設置邊框顏色 */
+    border-radius: 5px;  /* 設置邊框圓角半徑 */
+    padding: 5px;  /* 設置內邊距 */
+}
+
+QPushButton:hover {
+    background-color: rgb(238, 238, 238);  /* 鼠標懸停時的背景顏色 */
+}
+
+QPushButton:pressed {
+    background-color: rgb(200, 200, 200);  /* 按下時的背景顏色 */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>RUN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="STOP">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>70</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(218, 218, 218);  /* 設置背景顏色 */
+    border: 1px solid #707070;  /* 設置邊框顏色 */
+    border-radius: 5px;  /* 設置邊框圓角半徑 */
+    padding: 5px;  /* 設置內邊距 */
+}
+
+QPushButton:hover {
+    background-color: rgb(238, 238, 238);  /* 鼠標懸停時的背景顏色 */
+}
+
+QPushButton:pressed {
+    background-color: rgb(200, 200, 200);  /* 按下時的背景顏色 */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>STOP</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="SHOW">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>611</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;新細明體&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
