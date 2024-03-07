@@ -37,7 +37,7 @@ python app.py
 
 由於 trade_utils.py 文件包含商業機密，因此未包含在此存儲庫中。在運行系統之前，您需要：
 
-獲取 ptrade_utils.py 文件的副本。
+獲取 trade_utils.py 文件的副本。
 將該文件放置在與 app.py 相同的目錄中。
 如果您沒有 trade_utils.py 文件的訪問權限，請聯繫系統管理員或開發者獲取幫助。
 
