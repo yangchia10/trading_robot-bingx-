@@ -45,3 +45,31 @@ python app.py
 
 確保您的環境中已安裝了 Chrome 瀏覽器並且已設置環境變量。
 本系統目前僅支持 BingX 平台。
+
+## 流程圖
+
+```mermaid
+graph TD
+    app["app.py (主要應用程序)"]
+    run_commands["run_commands.py (運行命令)"]
+    price_thread["price_thread.py (價格監控)"]
+    Funds_thread["Funds_thread.py (資金監控)"]
+    HOLD_thread["HOLD_thread.py (持倉監控)"]
+    entrust_thread["entrust_thread.py (委託監控)"]
+    Trading_straregy["Trading_straregy.py (抓取價格)"]
+    trade_utils["trade_utils.py (交易策略)"]
+    priceVariable["priceVariable.py (價格變量處理)"]
+
+    app --> run_commands
+    app --> price_thread
+    app --> Funds_thread
+    app --> HOLD_thread
+    app --> entrust_thread
+    app --> Trading_straregy
+    app --> priceVariable
+
+    price_thread --> trade_utils
+    Trading_straregy --> trade_utils
+    priceVariable --> trade_utils
+```
+
